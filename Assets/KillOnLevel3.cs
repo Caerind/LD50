@@ -13,7 +13,7 @@ public class KillOnLevel3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (StateManager.Instance.GetLevelIndex() == 4)
+        if (GlobalManager.Instance.currentLevel == 4)
         {
             Destroy(gameObject);
         }

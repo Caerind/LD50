@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Camera))]
 public class CameraFrustumViewer : MonoBehaviour
 {
-    private new Camera camera;
+    private Camera camera;
 
     private void Awake()
     {

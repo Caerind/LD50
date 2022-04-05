@@ -1,5 +1,3 @@
-#define CAMERA_DEBUG
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -50,7 +48,7 @@ public class CameraManager : Singleton<CameraManager>
         transform.rotation = Quaternion.Euler(0.0f, 0.0f, (m_IsFocusingPlayer) ? m_PlayerCameraAngle : 0.0f);
     }
 
-#if CAMERA_DEBUG
+    /*
     [SerializeField] private bool cameraDebug = false;
 
     private void OnDrawGizmos()
@@ -67,5 +65,5 @@ public class CameraManager : Singleton<CameraManager>
             UnityEditor.Handles.DrawWireDisc(m_OtherFocusPosition, new Vector3(0, 0, 1), 0.1f);
         }        
     }
-#endif // TRAUMA_DEBUG
+    */
 }

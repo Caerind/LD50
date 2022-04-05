@@ -7,7 +7,7 @@ public class GameButtonComponent : MonoBehaviour
     [SerializeField] private List<GameObject> doors;
 
     [SerializeField] private bool lightEnabled = true;
-    [SerializeField] private new GameObject light;
+    [SerializeField] private GameObject light;
 
     private void Awake()
     {

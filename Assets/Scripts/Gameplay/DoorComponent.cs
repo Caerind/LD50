@@ -6,7 +6,7 @@ public class DoorComponent : MonoBehaviour
 {
     public float timer = 3.0f;
     public GameObject sprite;
-    public new GameObject light;
+    public GameObject light;
 
     private void Awake()
     {

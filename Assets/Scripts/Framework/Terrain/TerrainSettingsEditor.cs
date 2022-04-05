@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+#if UNITY_EDITOR
+
 [CustomEditor(typeof(TerrainSettings))]
 public class TerrainSettingsEditor : Editor
 {
@@ -21,3 +23,4 @@ public class TerrainSettingsEditor : Editor
 		GUILayout.Label("ChunksVisibleInViewDst: " + terrainSettings.chunksVisibleInViewDst);
 	}
 }
+#endif // UNITY_EDITOR

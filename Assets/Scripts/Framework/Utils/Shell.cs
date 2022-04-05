@@ -1,6 +1,8 @@
 using System.Diagnostics;
 using System.Threading;
 
+#if UNITY_EDITOR
+
 public static class Shell
 {
 #if UNITY_EDITOR_WIN
@@ -37,3 +39,5 @@ public static class Shell
         thread.Start();
     }
 }
+
+#endif // UNITY_EDITOR

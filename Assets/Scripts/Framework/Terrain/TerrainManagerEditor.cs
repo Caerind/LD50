@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+#if UNITY_EDITOR
+
 [CustomEditor(typeof(TerrainManager))]
 public class TerrainManagerEditor : Editor
 {
@@ -24,3 +26,5 @@ public class TerrainManagerEditor : Editor
         GUILayout.Label("ChunksVisibles: " + terrainManager.GetChunkVisibleCount());
     }
 }
+
+#endif // UNITY_EDITOR

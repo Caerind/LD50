@@ -33,11 +33,14 @@ public class GlobalManager : Singleton<GlobalManager>
 
     public void ActivateAlarm()
     {
-        alarmActivated = true;
-        timerEscape = timeToEscape;
-        timer.gameObject.SetActive(true);
-        timer.fillAmount = Mathf.Clamp01(timerEscape / timeToEscape);
-        AudioManager.PlaySound("alarm");
+        if (!alarmActivated)
+        {
+            alarmActivated = true;
+            timerEscape = timeToEscape;
+            timer.gameObject.SetActive(true);
+            timer.fillAmount = Mathf.Clamp01(timerEscape / timeToEscape);
+            AudioManager.PlaySound("alarm");
+        }
     }
 
     public void ResetLevel()
